@@ -149,7 +149,7 @@ for n in range(len(bussiness_address_df)):
     info_lst = [business_name, business_adr, place_ID,  # a row of result file
                 type_store_str, rating, review,
                 price_level]
-    # convert the open/close period (a dictionary) obtained from google place and convert and put in a csv file
+    # convert the open/close period (a dictionary) obtained from google place and put in a csv file
     lst_open_period = Convert_Hour_Period(open_hours)
     for m in lst_open_period:
         info_lst.append(m)
