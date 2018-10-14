@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import random
 from googleplaces import GooglePlaces
 
+"""Uses the google maps API and pandas to get the other features and saves the data to RESULT_FILE_NAME."""
 
 def Get_Start_Location(address_str):
     """Specific city to start depends on arrival address"""
