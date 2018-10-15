@@ -28,6 +28,6 @@ The model is a 5 layer fully connected network that takes in the features define
 ### Running the ML model [timePredML.ipynb](https://github.com/wichersq/alarm-predict-ML/blob/master/timePredML.ipynb "timePredML.ipynb")
 The simplest way is to run it in colab by clicking "View in Colaboratory" at the top of the file. Then you can select Runtime->Run all.
 ### Generating the data
-You'll need a [google maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key) and enable the dirrections and places APIs. A free account should let you generate a lot of the data.
+You'll need a [google maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key) and enable the dirrections and places APIs. A free account should let you generate a lot of the data. Put the API key in API_KEY.txt.
 You will have to install (pandas)[https://pandas.pydata.org/], and the google maps API python libraries: (googlemaps)[https://github.com/googlemaps/google-maps-services-python] and (googleplaces)[https://github.com/slimkrazy/python-google-places].
 Then run [generate_data.py](https://github.com/wichersq/alarm-predict-ML/blob/master/generate_data.py "generate_data.py") and [generate_fake_result.py](https://github.com/wichersq/alarm-predict-ML/blob/master/generate_fake_result.py "generate_fake_result.py") with python. Double check that file paths defined in the code are suitable.
