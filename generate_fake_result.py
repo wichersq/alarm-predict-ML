@@ -26,7 +26,7 @@ def calc_sec_arrive(reviews, price):
     return (0.6 * reviews) + price
 
 
-FILE_NAME = '/home/quyen/PycharmProjects/ML_model/raw_data.csv'
+FILE_NAME = 'Data/raw_data2.csv'
 READY_SEC = 45 * 60
 DRIV_PER = 2*60*60
 BREAK_TIME = 30*60
