@@ -1,3 +1,8 @@
+"""To bootstrap a ML model, creates a fake time for the user to get ready based on an equation.
+The equation assumes that it will take the user longer to get ready for a place that's more expensive,
+and that a place with more reviews is more popular so people will want to get there earlier.
+The data with the fake get ready time is saved in RESULT_FILE_NAME"""
+
 import pandas as pd
 
 def format_review(col,ifnan_col):
@@ -27,6 +32,7 @@ def calc_sec_arrive(reviews, price):
 
 
 FILE_NAME = 'Data/raw_data.csv'
+RESULT_FILE_NAME = 'Data/converted_data_with_totalDuration2.csv'
 READY_SEC = 45 * 60
 DRIV_PER = 2*60*60
 BREAK_TIME = 30*60
@@ -51,6 +57,6 @@ for n in range(len(data_df)):
 
 data_df['Total_Driving'] = drive_lst
 
-data_df.to_csv('Data/converted_data_with_totalDuration2.csv', index=False)
+data_df.to_csv(RESULT_FILE_NAME, index=False)
 
 
