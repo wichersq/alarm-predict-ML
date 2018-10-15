@@ -40,6 +40,7 @@ review_col = data_df['Reviews'].fillna(0)
 price_level_col = data_df['Price Level'].fillna(0)
 
 for n in range(len(data_df)):
+    #This is the equation to generate the fake get-ready time.
     dri_dur = data_df['Driving_Duration'][n]
     min_arrive_early = calc_sec_arrive(review_col[n], price_level_col[n])
     if dri_dur > DRIV_PER:
