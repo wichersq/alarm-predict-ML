@@ -27,6 +27,7 @@ def calc_sec_arrive(reviews, price):
 
 
 FILE_NAME = 'Data/raw_data2.csv'
+RESULT_FILE_NAME = 'Data/converted_data_with_totalDuration2.csv'
 READY_SEC = 45 * 60
 DRIV_PER = 2*60*60
 BREAK_TIME = 30*60
@@ -51,6 +52,6 @@ for n in range(len(data_df)):
 
 data_df['Total_Driving'] = drive_lst
 
-data_df.to_csv('Data/converted_data_with_totalDuration2.csv', index=False)
+data_df.to_csv(RESULT_FILE_NAME, index=False)
 
 
